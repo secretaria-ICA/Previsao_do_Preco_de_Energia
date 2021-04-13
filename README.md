@@ -1,7 +1,7 @@
 # Título do Trabalho
 
 #### Aluno: [Matheus Rangel Cardoso](https://github.com/MatheusRangelCardoso)
-#### Orientador(/a/es/as): [Leonardo Mendonza](https://github.com/leofome8) e [Manoela Kohler](https://github.com/manoelakohler).
+#### Orientadores: [Leonardo Mendonza](https://github.com/leofome8) e [Manoela Kohler](https://github.com/manoelakohler).
 
 ---
 
