@@ -1,4 +1,4 @@
-# Trabalho de Conclusão de Curso - Previsão Preço de Energia.
+# Trabalho de Conclusão de Curso - Previsão do Preço de Energia.
 
 #### Aluno: [Matheus Rangel Cardoso](https://github.com/MatheusRangelCardoso)
 #### Orientadores: [Leonardo Mendonza](https://github.com/leofome8) e [Manoela Kohler](https://github.com/manoelakohler).
