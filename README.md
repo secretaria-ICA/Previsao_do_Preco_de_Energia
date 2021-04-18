@@ -39,7 +39,7 @@ Após o ajuste da base de dados, são criados três modelos utilizando a mesma a
 **3 camada Flattern** - Responsável por vetorizar o resultado da rede neural. Esta camada foi adicionada para que o output seja exibido em um array (possibilitando a manipulação dos dados do output de uma maenira mais otimizada)
 <br>
 <br>
-**4 camada dense** - A camada dense é responsável por resolver o problema de forma não linear. Essa camada passar o resultado de produzido por um neurônio em uma função não linear, isto possibilita a resolução de problemas complexos e não lineares. Essa camada foi configurada com 100 neurônios e possui a função de ativação "relu".
+**4 camada dense** - A camada dense é responsável por resolver o problema de forma não linear. Essa camada é responsável por passar o resultado produzido por um neurônio em uma função não linear, possibilitando assim a resolução de problemas complexos e não lineares. Essa camada foi configurada com 100 neurônios e possui a função de ativação "relu".
 <br>
 ![image](https://user-images.githubusercontent.com/39468750/115156371-46303f80-a05a-11eb-8f5e-e39c00ec2c72.png)
 <br>
