@@ -24,7 +24,7 @@ O modelo utiliza como base de dados:
 2 - Dados históricos de características climáticas presentes em cinco cidades da Espanha: **Valencia, Madrid, Bilbao, Barcelona e Seville.**
 <br>
 <br>
-É realizado um pré processamento nas duas bases de dados para a verificação de registros nulos e registros duplicados. Não foi realizada uma análise profunda para a verificação de outliers. Desta maneira, variáveis com "suspeitas de outliers" não foram consideradas para a criação do modelo. Após a realização do pré processamento, é realizado um **"merge"** entre as duas bases de dados, possibilitando assim o cruzamento de informações entre o consumo de energia e os dados climátiocs para a criação do modelo.
+É realizado um pré processamento nas duas bases de dados para a verificação de registros nulos e registros duplicados. Não foi realizada uma análise profunda para a verificação de outliers. Desta maneira, variáveis com "suspeitas de outliers" não foram consideradas para a criação do modelo. Após a realização do pré processamento, é realizado um **"merge"** entre as duas bases de dados, possibilitando assim o cruzamento de informações entre o consumo de energia e os dados climátiocs para a construção do modelo.
 <br>
 <br>
 Após o ajuste da base de dados, são criados três modelos utilizando a mesma arquitetura de rede neural:
