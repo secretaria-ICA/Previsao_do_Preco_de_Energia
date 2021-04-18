@@ -14,7 +14,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-Trabalho de conclusão de curso com o objetivo de constuir um modelo capaz de prever qual será o preço da energia na próxima hora.
+Trabalho de conclusão de curso com o objetivo de construir um modelo capaz de prever qual será o preço da energia na próxima hora.
 
 O modelo utiliza como base de dados:
 
@@ -30,6 +30,11 @@ cinco horas atrás, possuindo assim seis variáveis.
 O intuito da criação de três modelos com diferentes variáveis de input é verificar se o modelo construído pela rede neural é capaz de realizar 
 previsões assertivas com a redução da complexidade do modelo, isto é, verificar se a medida que as variáveis de input são retiradas do modelo, 
 a rede neural é capaz de melhorar suas previsões ou não.
+
+Os modelos são avliados utilizando duas métricas de avaliação:
+
+Root-mean-square deviation (RMSE)
+Mean absolute percentage error (MAPE) que O Modelo 3, utilizando o janelamento da variável "price day ahead" cinco horas para traz apresnetou um melhor resultado do que os outros dois modelos anteriores. Desta maneira, a realização do janelamento da variável "price day ahead" foi suficiente para a criação de uma rede neural capaz de realizar a previsão do preço do consumo de energia.
 
 ---
 
