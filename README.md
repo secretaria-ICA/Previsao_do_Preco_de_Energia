@@ -30,6 +30,8 @@ O modelo utiliza como base de dados:
 Após o ajuste da base de dados, são criados três modelos utilizando a mesma arquitetura de rede neural:
 <br>
 <br>
+---
+
 **1 camada LSTM (Long Short Time Memory)** -  Com 100 neurônios. Camada responsável por "aprender" a dependência temporal de longa duração na série.
 <br>
 <br>
@@ -52,13 +54,15 @@ Para a função relu, se o valor produzido por um neurônio for negativo, ele se
 **6 camada dense** - Com uma função de ativação linear possuindo um único neurônio.
 <br>
 <br>
-**Otimizador** - **Adam**.
+**Otimizador** - Adam.
 <br>
 O otimizador é um algorítimo usado para modificar os atributos de uma rede neural a cada época de treinamento com o intutio de reduzir o erro produzido pela rede neural a cada época. 
 <br>
 *Exemplo: a cada época de treinamento, a rede passa por um ajuste nos pesos de seus neurônios para que no próximo treinamento o erro seja cada vez menor, e este ajuste nos pesos é realizado por conta do otimizador.*
 <br>
 <br>
+---
+
 A única **diferença** entre cada modelo é o **número de variáveis utilizadas como input** para realizar a previsão do consumo de energia:
 <br>
 **Modelo 1** - Possui 16 variáveis, 
