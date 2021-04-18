@@ -27,8 +27,10 @@ O modelo utiliza como base de dados:
 São criados três modelos utilizando a mesma arquitetura de rede neural (LSTM). A única diferença entre cada modelo é o número de variáveis 
 utilizadas como input para realizar a previsão do consumo de energia.
 <br>
+<br>
 O primeiro modelo possui 16 variáveis, o segundo modelo 10 variáveis e o terceiro modelo apresenta apenas o janelamento de uma única variável 
 cinco horas atrás, possuindo assim seis variáveis.
+<br>
 <br>
 O intuito da criação de três modelos com diferentes variáveis de input é verificar se o modelo construído pela rede neural é capaz de realizar 
 previsões assertivas com a redução da complexidade do modelo, isto é, verificar se a medida que as variáveis de input são retiradas do modelo, 
