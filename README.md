@@ -78,7 +78,7 @@ Os três modelos são avliados utilizando duas métricas de avaliação:
 **Mean absolute percentage error (MAPE)**
 <br>
 <br>
-Por fim, após a valiação dos modelos, constata-se que o último modelo (**Modelo 3**), utilizando o janelamento da variável **"price day ahead"** cinco horas para traz apresnetou um melhor resultado do que os outros dois modelos anteriores. Desta maneira, a realização do janelamento da variável **"price day ahead"** foi suficiente para a criação de uma rede neural capaz de realizar a previsão do preço do consumo de energia.
+Por fim, após a avaliação dos modelos, constata-se que o último modelo (**Modelo 3**), utilizando o janelamento da variável **"price day ahead"** cinco horas para traz apresentou um melhor resultado do que os outros dois modelos anteriores. Desta maneira, a realização do janelamento da variável **"price day ahead"** foi suficiente para a criação de uma rede neural capaz de realizar a previsão do preço do consumo de energia.
 
 ---
 
