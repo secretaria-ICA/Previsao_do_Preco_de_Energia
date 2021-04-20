@@ -24,7 +24,7 @@ O modelo utiliza como base de dados:
 2 - Dados históricos de características climáticas presentes em cinco cidades da Espanha: **Valencia, Madrid, Bilbao, Barcelona e Seville.**
 <br>
 <br>
-É realizado um pré-processamento nas duas bases de dados para a verificação de registros nulos e registros duplicados. Não foi realizada uma análise profunda para a verificação de outliers. Desta maneira, variáveis com "suspeitas de outliers" não foram consideradas para a criação do modelo. Após a realização do pré processamento, é realizado um **"merge"** entre as duas bases de dados, possibilitando assim o cruzamento de informações entre o consumo de energia e os dados climátiocs para a construção do modelo.
+É realizado um pré-processamento nas duas bases de dados para a verificação de registros nulos e registros duplicados. Não foi realizada uma análise profunda para a verificação de outliers. Logo, variáveis com "suspeitas de outliers" não foram consideradas para a criação do modelo. Após a realização do pré-processamento foi realizado um **"merge"** entre as duas bases de dados, possibilitando assim o cruzamento de informações entre o consumo de energia e os dados climáticos para a construção do modelo.
 <br>
 <br>
 Após o ajuste da base de dados, são criados três modelos utilizando a mesma arquitetura de rede neural:
@@ -33,10 +33,10 @@ Após o ajuste da base de dados, são criados três modelos utilizando a mesma a
 **1 camada LSTM (Long Short Time Memory)** -  Com 100 neurônios. Camada responsável por "aprender" a dependência temporal de longa duração na série.
 <br>
 <br>
-**2 camada Dropout** - Camada para ajudar na capacidade de generalização da rede, previnindo o ***overffiting** do modelo. Esta camada de dropout possui 20% de chance de ativação, isto é, durante a realziação do treinamento, o output de um neorônio terá 20% de chance do seu valor ser substituido por "0". Desta maneira, um neorônio não vai ficar "especializado" durante o treinaemnto ajudando assim a combater o overfitting do modelo.
+**2 camada Dropout** - Camada para ajudar na capacidade de generalização da rede, prevenindo o ***overffiting** do modelo. Esta camada de dropout possui 20% de chance de ativação, isto é, durante a realziação do treinamento, o output de um neorônio terá 20% de chance do seu valor ser substituido por "0". Desta maneira, um neorônio não vai ficar "especializado" durante o treinaemnto ajudando assim a combater o overfitting do modelo.
 <br>
 <br>
-**3 camada Flattern** - Responsável por vetorizar o resultado da rede neural. Esta camada foi adicionada para que o output seja exibido em um array (possibilitando a manipulação dos dados do output de uma maenira mais otimizada)
+**3 camada Flattern** - Responsável por vetorizar o resultado da rede neural. Essa camada foi adicionada para que o output seja exibido em um array (possibilitando a manipulação dos dados do output de uma maenira mais otimizada)
 <br>
 <br>
 **4 camada dense** - A camada dense é responsável por resolver o problema de forma não linear. Essa camada é responsável por passar o resultado produzido por um neurônio em uma função não linear, possibilitando assim a resolução de problemas complexos e não lineares. Essa camada foi configurada com 100 neurônios e possui a função de ativação "relu".
@@ -56,7 +56,7 @@ Para a função relu, se o valor produzido por um neurônio for negativo, ele se
 <br>
 O otimizador é um algorítimo usado para modificar os atributos de uma rede neural a cada época de treinamento com o intutio de reduzir o erro produzido pela rede neural a cada época. 
 <br>
-*Exemplo: a cada época de treinamento, a rede passa por um ajuste nos pesos de seus neurônios para que no próximo treinamento o erro seja cada vez menor, e este ajuste nos pesos é realizado por conta do otimizador.*
+*Exemplo: a cada época de treinamento, a rede passa por um ajuste nos pesos de seus neurônios para que no próximo treinamento o erro seja cada vez menor, e esse ajuste nos pesos é realizado por conta do otimizador.*
 <br>
 <br>
 A única **diferença** entre cada modelo é o **número de variáveis utilizadas como input** para realizar a previsão do consumo de energia:
@@ -78,7 +78,7 @@ Os três modelos são avliados utilizando duas métricas de avaliação:
 **Mean absolute percentage error (MAPE)**
 <br>
 <br>
-Por fim, após a avaliação dos modelos, constata-se que o último modelo (**Modelo 3**), utilizando o janelamento da variável **"price day ahead"** cinco horas para traz apresentou um melhor resultado do que os outros dois modelos anteriores. Desta maneira, a realização do janelamento da variável **"price day ahead"** foi suficiente para a criação de uma rede neural capaz de realizar a previsão do preço do consumo de energia.
+ Após a avaliação dos modelos, constatou-se que o último modelo (**Modelo 3**), utilizando o janelamento da variável **"price day ahead"** cinco horas para traz apresentou um melhor resultado do que os outros dois modelos anteriores. Desta maneira, a realização do janelamento da variável **"price day ahead"** foi suficiente para a criação de uma rede neural capaz de realizar a previsão do preço do consumo de energia.
 
 ---
 
