@@ -14,7 +14,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-Trabalho de conclusão de curso com o objetivo de construir um modelo capaz de prever qual será o preço da energia na próxima hora.
+O trabalho de conclusão de curso tem como objetivo construir um modelo capaz de prever qual será o preço da energia na próxima hora.
 <br>
 O modelo utiliza como base de dados:
 <br>
